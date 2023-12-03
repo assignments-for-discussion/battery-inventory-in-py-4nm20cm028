@@ -14,7 +14,7 @@ def count_batteries_by_health(present_capacities):
       battery_life_dict[healthy]+=1
     elif SoH<=80 and SoH>62:
       battery_life_dict[exchange]+=1
-    elif SoH<62:
+    elif SoH<=62:
       battery_life_dict[failed]+=1
 
 
