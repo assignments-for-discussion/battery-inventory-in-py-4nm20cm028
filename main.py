@@ -7,8 +7,10 @@ def count_batteries_by_health(present_capacities):
     "failed": 0
   }
 
+  rated_capacity = 120 
+
   for i in present_capacities:
-    SoH = (100*i)/120
+    SoH = (100*i)/rated_capacity
 
     if SoH<=100 and SoH>80: 
       battery_life_dict["healthy"]+=1
